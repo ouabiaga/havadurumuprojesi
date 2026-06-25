@@ -1,17 +1,34 @@
-# havadurumu
+# Hava Durumu Uygulaması 🌤️
 
-A new Flutter project.
+Bu proje Flutter ile geliştirilmiş basit bir hava durumu uygulamasıdır.  
+Uygulama **API keysiz** servisler kullanılarak geliştirilmiştir.  
 
-## Getting Started
+## Özellikler
+- IP tabanlı konum alma (`http://ip-api.com/json/`)
+- Open-Meteo API üzerinden anlık hava durumu verisi çekme
+- Rüzgar hızı, rüzgar yönü, sıcaklık, enlem-boylam ve timezone bilgisi gösterme
+- Flutter SmartDialog ile kullanıcıya bilgi sunma
 
-This project is a starting point for a Flutter application.
+## Kullanılan Servisler
+- [ip-api.com](http://ip-api.com/json/) → Kullanıcının IP adresinden enlem-boylam bilgisi almak için
+- [Open-Meteo](https://open-meteo.com/) → API keysiz hava durumu verisi almak için
 
-A few resources to get you started if this is your first Flutter project:
+## Neden API keysiz?
+Projeyi GitHub üzerinde paylaşırken herkesin kolayca çalıştırabilmesi için **API key gerektirmeyen servisler** tercih edilmiştir.  
+Bu sayede ek bir kayıt veya anahtar gerekmeden uygulama doğrudan çalışır.
+## Kullanılan sistem
+Buj proje 100mb'nin üstünde bir dosya olduğu için github lfs sistemi kullanılmıştır.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Kurulum
+1. Flutter SDK kurulu olmalı
+2. Projeyi klonla:
+   ```bash
+   git clone https://github.com/ouabiaga/havadurumuprojesi.git
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    ```
+3.çalıştır
+```bash
+   cd havadurumuprojesi
+   cd havadurumu
+   flutter run
+```
